@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="tictactoe.mettechinno.MenuController"  prefWidth="600" prefHeight="600" style="-fx-background-color: black;" alignment="CENTER">
+    <children>
+        <Label text="TicTacToe" style="-fx-text-fill: white; -fx-font-size:40; -fx-font-weight:bold;" />
+        <Label text="Enter Player Details" style="-fx-text-fill: white; -fx-font-size: 24px; -fx-font-weight: bold;" />
+        <GridPane hgap="10" vgap="10" style="-fx-padding: 20;" alignment="CENTER">
+            <children>
+                <Label text="Player X Name:" GridPane.rowIndex="0" GridPane.columnIndex="0" style="-fx-text-fill: white; -fx-font-size:20; -fx-font-weight:bold"/>
+                <TextField fx:id="playerXNameField" GridPane.rowIndex="0" GridPane.columnIndex="1" style="-fx-text-fill: black; -fx-font-size:18; -fx-font-weight:bold" />
+                <Label text="Player X Color:" GridPane.rowIndex="1" GridPane.columnIndex="0" style="-fx-text-fill: white; -fx-font-size:20; -fx-font-weight:bold"/>
+                <ColorPicker fx:id="playerXColorPicker" GridPane.rowIndex="1" GridPane.columnIndex="1"  style="-fx-text-fill: black; -fx-font-size:18; -fx-font-weight:bold" />
+
+                <Label text="Player O Name:" GridPane.rowIndex="2" GridPane.columnIndex="0" style="-fx-text-fill: white; -fx-font-size:20; -fx-font-weight:bold" />
+                <TextField fx:id="playerONameField" GridPane.rowIndex="2" GridPane.columnIndex="1"  style="-fx-text-fill: black; -fx-font-size:18; -fx-font-weight:bold"/>
+                <Label text="Player O Color:" GridPane.rowIndex="3" GridPane.columnIndex="0" style="-fx-text-fill: white; -fx-font-size:20; -fx-font-weight:bold" />
+                <ColorPicker fx:id="playerOColorPicker" GridPane.rowIndex="3" GridPane.columnIndex="1"  style="-fx-text-fill: black; -fx-font-size:18; -fx-font-weight:bold"/>
+            </children>
+        </GridPane>
+        <Button text="Start Game" onAction="#startGame" style="-fx-background-color: #ff0100; -fx-text-fill: white; -fx-font-size:24; -fx-font-weight:bold" />
+    </children>
+</VBox>

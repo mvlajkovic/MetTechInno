@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="tictactoe.mettechinno.TicTacToe"
+      prefWidth="600" prefHeight="600" style="-fx-background-color: black;" alignment="CENTER">
+  <children>
+    <Label text="Tic Tac Toe" style="-fx-text-fill: white; -fx-font-size:40; -fx-font-weight:bold;"  />
+    <GridPane fx:id="boardGrid" hgap="5" vgap="5" alignment="CENTER">
+      <padding>
+        <Insets top="10" right="10" bottom="10" left="10" />
+      </padding>
+    </GridPane>
+    <Label fx:id="statusLabel" text="Current player: X" style="-fx-text-fill: white; -fx-font-size:30; -fx-font-weight:bold; -fx-padding: 10px;"  />
+    <HBox spacing="10" style="-fx-padding: 10px;" alignment="CENTER">
+      <Label fx:id="playerXScoreLabel" text="Player X: 0" style="-fx-text-fill: white; -fx-font-size:20; -fx-font-weight:bold"/>
+      <Label fx:id="playerOScoreLabel" text="Player O: 0" style="-fx-text-fill: white; -fx-font-size:20; -fx-font-weight:bold"/>
+      <Label fx:id="timerLabel" text="00:00" style="-fx-text-fill: white; -fx-font-size:20; -fx-font-weight:bold"/>
+    </HBox>
+  </children>
+</VBox>
